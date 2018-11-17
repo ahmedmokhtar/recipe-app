@@ -6,5 +6,11 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'recipe-app';
+  // title = 'recipe-app';
+  displayedHeader = 'Recipes';
+
+  onHeaderLinkClicked(headerName: string) {
+    this.displayedHeader = headerName;
+
+  }
 }
