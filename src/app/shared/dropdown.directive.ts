@@ -8,7 +8,7 @@ import { Directive,
   selector: '[appDropdown]'
 })
 export class DropdownDirective {
-  menuOpened = false;
+  // menuOpened = false;
   @HostBinding('class.open') isOpen = false;
 
   constructor(private elRef: ElementRef) {}
